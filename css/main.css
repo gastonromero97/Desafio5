@@ -1,0 +1,203 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+
+}
+body{
+    background-image: linear-gradient(to bottom, #b9e6e6, rgb(228, 241, 238));
+    height: 100%;
+
+}
+
+.ulN{
+    display: none;
+}
+
+.bienvenidos{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(20, 20, 20);
+    color: #b9e6e6;
+    
+    
+}
+h2{
+    text-align: center;
+    padding: 1rem;
+}
+
+.section{
+    display: grid;
+    grid-template-areas:"parrafo1" 
+                        "videoNvidia"
+                        "parrafo2" 
+                        "videoIntel"
+                        ;
+}
+.imgP{
+    display: grid;
+    justify-content: center;
+    grid-template-areas:"gabinete impresora"
+                        "placadevideo placamadre";
+}
+
+.parrafo1{
+    margin: 1.5rem;
+}
+
+.parrafo2{
+    margin: 1.5rem;
+}
+
+.videoNvidia{
+    width: 100%;
+
+}
+
+.videoIntel{
+    width: 100%;
+
+}
+h3{
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+h4{font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+
+@media only screen and (min-width: 650px){
+    .section{
+        display: grid;
+        grid-template-areas:"parrafo1 parrafo2"
+                            "videoNvidia videoIntel";
+    }
+    .divVideo1, .divVideo2{
+        text-align: center;
+    }
+    .videoNvidia,.videoIntel{
+        width: 90%; 
+    }
+    .logoK{
+        position: absolute;
+
+    }
+    .ulN{
+        display: flex;
+        justify-content:end;
+        padding: 1rem;   
+    }
+
+    nav ul li{
+        margin-inline-start: 1rem;
+        font-size: 1.2rem;
+        background-color: rgb(208, 240, 233);
+        border-radius: 1rem;
+        padding: 0.4rem;
+        font-weight: bold;
+    }
+    nav ul li:hover{
+        background-color: #b9e6e6;
+        transform: scale(1.05);
+    }
+    iframe:hover{
+        transform: scale(1.02);
+
+    }
+    .logoK:hover{
+        transform: scale(1.02);
+    }
+
+    .imgP{
+        display: grid;
+        justify-content: center;
+        grid-template-areas:"gabinete impresora"
+                            "placadevideo placamadre";
+    }
+    .gabinete2, .impresora2, .placadevideo2, .placamadre2{
+        height: 200px;
+        margin: 1rem;
+    }
+    .gabinete2:hover, .impresora2:hover, .placadevideo2:hover, .placamadre2:hover{
+        transform: scale(1.1);
+    }
+    h4{font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 1050px){
+    .section{
+        display: grid;
+        grid-template-areas:"parrafo1 parrafo2"
+                            "videoNvidia videoIntel"
+                            
+    }
+    .divVideo1, .divVideo2{
+        text-align: center;
+    }
+    .videoNvidia,.videoIntel{
+        width: 500px;   
+    }
+    .logoK{
+        position: absolute;
+
+    }
+    .ulN{
+        display: flex;
+        justify-content:end;
+        padding: 1.5rem;
+    }
+    nav ul li{
+        margin-inline-start: 9rem;
+        font-size: 1.5rem;
+        background-color: rgb(208, 240, 233);
+        border-radius: 1rem;
+        padding: 0.4rem;
+        font-weight: bold;
+    }
+    nav ul li:hover{
+        background-color: #b9e6e6;
+        transform: scale(1.05);
+    }
+    main{
+        height: 100%;
+    }
+    .imgP{
+        display: grid;
+        justify-content: center;
+        grid-template-areas:"gabinete impresora placadevideo placamadre";
+    }
+    .gabinete2, .impresora2, .placadevideo2, .placamadre2{
+        height: 240px;
+        margin: 1rem;
+    }
+    .gabinete2:hover, .impresora2:hover, .placadevideo2:hover, .placamadre2:hover{
+        transform: scale(1.1);
+    }
+    iframe:hover{
+        transform: scale(1.02);
+    }
+    h4{font-size: 1.3rem;
+        display: flex;
+        justify-content: right;
+        padding: 1rem;
+    }
+}
